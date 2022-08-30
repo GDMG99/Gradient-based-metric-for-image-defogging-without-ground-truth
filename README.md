@@ -1,3 +1,3 @@
-"# Contour-based-metric-for-image-defogging-without-ground-truth" 
+# Contour based metric for image defogging without ground truth
 
-# Hello
+Hello
