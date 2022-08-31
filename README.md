@@ -7,7 +7,8 @@ Fog, haze, or smoke are usual atmospheric phenomena that dramatically compromise
 
 In this repository you will find the MATLAB implementation of the Contour-based metric for image defogging without ground truth algorithm found in the paper.
 
-![Comparison](/Images/contour_comparison.png)
+![Example](/Images/Example.png)
+
 *Edge comparison between a fogged image (left) and its fog-free ground truth (right). Both colour images are presented on top with their associated edge images below. Both images are part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset.*
 
 ## Usage
