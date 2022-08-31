@@ -17,7 +17,9 @@ The algorithm is implemented in the `Contour_based_metric_woGT.m` on the `Demo_d
 
 ## Demo dataset
 Apart from the implemented algorithm, the user may find a demo dataset as well. This dataset is part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset used in the [NTIRE 2018 defogging challenge](https://people.ee.ethz.ch/~timofter/publications/NTIRE2018_Dehazing_report_CVPRW-2018.pdf). If you use the images for academic porpuses make sure to cite the authors properly.
->`@inproceedings{O-HAZE_2018,
+>
+```
+@inproceedings{O-HAZE_2018,
 author = { Codruta O. Ancuti and Cosmin Ancuti and Radu Timofte and Christophe De Vleeschouwer},
 title = {O-HAZE: a dehazing benchmark with real hazy and haze-free outdoor images},
 booktitle =  {IEEE Conference on Computer Vision and Pattern Recognition, NTIRE Workshop },
@@ -25,3 +27,4 @@ series = {NTIRE CVPR'18},
 year = {2018},
 location = {Salt Lake City, Utah, USA},
 }
+```
