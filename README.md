@@ -23,11 +23,9 @@ where $F_x$ and $F_y$ are the corresponding horizontal and vertical derivatives 
 $$
     F = \sqrt{F_x^2+F_y^2}.
 $$
-<figure>
-    <img src="Images/contour_comparison.png"
-         alt="Albuquerque, New Mexico">
-    <figcaption>Edge comparison between a fogged image (left) and its fog-free ground truth (right). Both colour images are presented on top with their associated edge images below. Both images are part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset.</figcaption>
-</figure>
+
+![Comparison](/Images/contour_comparison.png)
+*Edge comparison between a fogged image (left) and its fog-free ground truth (right). Both colour images are presented on top with their associated edge images below. Both images are part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset.*
 
 Note that in any image, most of the pixels do not represent an edge, yielding small values in the processed edge image. Hence, we define a threshold value for the edge values in order to differentiate the edges of interest from the background. 
 
