@@ -49,6 +49,8 @@ histogram(RD(RD>0),'BinWidth',0.5,'FaceColor','green')
 hold on
 histogram(RD(RD<0),'BinWidth',0.5,'FaceColor','red')
 title(sprintf('R = %0.4f',R))
+xlabel("Relative difference")
+ylabel("R")
 hold off
 subplot(2,2,4)
 imshow(result)
