@@ -49,3 +49,13 @@ where $r_i^\pm$ is the value of the relative difference, either positive or nega
 An additional remark must be made. As previously discussed, DNNs and especially GANs, are nowadays used to tackle defogging. GANs are very useful when it comes to generating new data that resembles the data distribution it has learned from. This means that these networks tend to generate new features in the images, which leads to new contours producing better results in our metric even if the defogging is poor. We believe that generating these "*ghost*" features in the image should directly discard the defogging method. Defogging is especially useful to increase the performance of object detection and image segmentation, which will ultimately execute an action in an autonomous vehicle. Executing an action due to a "*ghost*" feature could be extremely dangerous. So our metric works under the premise that no new features are added to the defogged image during the defogging procedure, and only already existing features are highlighted.
 
 
+## Demo dataset
+Apart from the implemented algorithm, the user may find a demo dataset as well. This dataset is part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset used in the [NTIRE 2018 defogging challenge](https://people.ee.ethz.ch/~timofter/publications/NTIRE2018_Dehazing_report_CVPRW-2018.pdf). If you use the images for academic porpuses make sure to cite the authors properly.
+>`@inproceedings{O-HAZE_2018,
+author = { Codruta O. Ancuti and Cosmin Ancuti and Radu Timofte and Christophe De Vleeschouwer},
+title = {O-HAZE: a dehazing benchmark with real hazy and haze-free outdoor images},
+booktitle =  {IEEE Conference on Computer Vision and Pattern Recognition, NTIRE Workshop },
+series = {NTIRE CVPR'18},
+year = {2018},
+location = {Salt Lake City, Utah, USA},
+}`
