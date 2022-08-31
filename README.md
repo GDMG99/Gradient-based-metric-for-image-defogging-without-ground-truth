@@ -23,6 +23,11 @@ where $F_x$ and $F_y$ are the corresponding horizontal and vertical derivatives 
 $$
     F = \sqrt{F_x^2+F_y^2}.
 $$
+<figure>
+    <img src="Images/contour_comparison.png"
+         alt="Albuquerque, New Mexico">
+    <figcaption>Edge comparison between a fogged image (left) and its fog-free ground truth (right). Both colour images are presented on top with their associated edge images below. Both images are part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset.</figcaption>
+</figure>
 
 Note that in any image, most of the pixels do not represent an edge, yielding small values in the processed edge image. Hence, we define a threshold value for the edge values in order to differentiate the edges of interest from the background. 
 
@@ -46,7 +51,7 @@ where $r_i^\pm$ is the value of the relative difference, either positive or nega
 
  As we previously mentioned, the threshold value in the relative difference equation has been empirically fixed. We noted that setting a threshold above 8\% disregards low intensity edges, and decreases the value of the metric. On the other side, a threshold smaller than 5\% considers an edge almost any variation due to noise. We shall recall the reader that this threshold was introduced to separate the background pixels, where there are no contours, from the low intensity edges.
 
-An additional remark must be made. As previously discussed, DNNs and especially GANs, are nowadays used to tackle defogging. GANs are very useful when it comes to generating new data that resembles the data distribution it has learned from. This means that these networks tend to generate new features in the images, which leads to new contours producing better results in our metric even if the defogging is poor. We believe that generating these "*ghost*" features in the image should directly discard the defogging method. Defogging is especially useful to increase the performance of object detection and image segmentation, which will ultimately execute an action in an autonomous vehicle. Executing an action due to a "*ghost*" feature could be extremely dangerous. So our metric works under the premise that no new features are added to the defogged image during the defogging procedure, and only already existing features are highlighted.
+An additional remark must be made. Deep Neural Networks (DNNs) and especially Generative Adversarial Networks (GANs), are nowadays used to tackle defogging. GANs are very useful when it comes to generating new data that resembles the data distribution it has learned from. This means that these networks tend to generate new features in the images, which leads to new contours producing better results in our metric even if the defogging is poor. We believe that generating these "*ghost*" features in the image should directly discard the defogging method. Defogging is especially useful to increase the performance of object detection and image segmentation, which will ultimately execute an action in an autonomous vehicle. Executing an action due to a "*ghost*" feature could be extremely dangerous. So our metric works under the premise that no new features are added to the defogged image during the defogging procedure, and only already existing features are highlighted.
 
 
 ## Demo dataset
