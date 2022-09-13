@@ -16,7 +16,7 @@ Contours, edges, and textures are greatly affected by fog. Several proposes have
 
 The algorithm is implemented in the `Contour_based_metric_woGT.m` on the `Demo_dataset`. `Contour_based_metric_woGT.m` will output an image as showed above. The images on the first row are the Hazy and Defogged images. On the second row we can find the relative difference histogram, with the $R$ value of our metric, as well as the relative difference image. White points correspond to the background, green shows us the points where a gradient is enhanced, red, the contrary. The intensity of the difference is conserved, so the brighter color the higher the relative difference between the gradient of the Hazy image compared to the Defogged one. The functions used in the file can be found at the `Functions_metric` folder. Please, if our metric is useful for your work, consider citing our paper.
 
->`Paper citation`
+>`DeMas-Giménez, G.; García-Gómez, P.; Casas, J.R.; Royo, S. Contour-Based Metric for the Evaluation of Image Defogging without a Ground Truth. Preprints 2022, 2022090127 (doi: 10.20944/preprints202209.0127.v1).`
 
 ## Demo dataset
 Apart from the implemented algorithm, the user may find a demo dataset as well. This dataset is part of the [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/) dataset used in the [NTIRE 2018 defogging challenge](https://people.ee.ethz.ch/~timofter/publications/NTIRE2018_Dehazing_report_CVPRW-2018.pdf). If you use the images for academic porpuses make sure to cite the authors properly.
